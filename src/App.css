@@ -1,26 +1,19 @@
 h3{
-  padding-top: 1%; /* Adjust as needed, reduced from 5% */
   text-align: center;
-  color: black;
 }
-
-* {
-  background-color: white;
-}
-
-.ds {
-  margin-bottom: 1%; /* Reduced from 30% */
-  padding-top: 0%; /* Reduced from 20% */
-}
-
-.ta {
-  margin-bottom: 2%; /* Reduced from 20% */
+.ps{
+  margin-bottom: 2%;
 }
 button{
+  background-color: aqua;
   margin-top: 2%;
-  background-color:skyblue;
 }
 .fs{
-  width: 30%;
-  padding-top: 2%;
+  width: 20%;
+  margin-left: 40%;
+  margin-top: 2%;
+  height: 5%;
+}
+.container{
+  text-align: center;
 }

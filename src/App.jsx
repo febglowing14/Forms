@@ -1,57 +1,47 @@
+import React from 'react';
 
-import react from 'react';
 export default function App() {
 
   function signup(formData) {
-
     const email = formData.get('email');
     const password = formData.get('password');
     const description = formData.get('description');
-    console.log(email)
-    console.log(password)
-    console.log(description)
-
+    console.log(email);
+    console.log(password);
+    console.log(description);
   }
+
   return (
-    <section>
+    <section className='container'>
       <h3>Signup Form</h3>
-
       <form action={signup}>
-
         <label>Email: </label>
-        <input name='email' placeholder="abcd@gmail.com" />
-        <br />
+        <input className='ps' name='email' placeholder="abcd@gmail.com" />
         <br />
         <label>Password:</label>
-        <input name='password' placeholder='password' />
-        <br />
+        <input className='ps' name='password' placeholder='password' />
         <br />
         <label className='ds'>Description:</label>
-        <br />
         <textarea className="ta" name='description' placeholder='description' />
         <fieldset className='fs'>
-          <legend>Employment  status</legend>
-
+          <legend className='ps'>Employment status</legend>
           <label>
-            <input type='radio' name='employment' value='employed' />
-            unemployed
+            <input type='radio' name='employmentStatus' value='unemployed' />
+            Unemployed
           </label>
-          <br/>
           <label>
-            <input type="radio" name="employmentStatus" />
+            <input type="radio" name="employmentStatus" value='part-time' />
             Part-time
           </label>
-          <br/>
           <label>
-            <input type="radio" name="employmentStatus" />
+            <input type="radio" name="employmentStatus" value='full-time' />
             Full-time
           </label>
         </fieldset>
-
-        <button>submit</button>
+        <button type="submit">Submit</button>
       </form>
     </section>
-  )
+  );
 }
 
 
