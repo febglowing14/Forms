@@ -17,3 +17,14 @@ button{
 .container{
   text-align: center;
 }
+.dr{
+  width: 20%;
+  margin-left: 40%;
+  margin-top: 2%;
+}
+.fc{
+  margin-top: 2%;
+}
+#favcolor{
+  width: 10%;
+}

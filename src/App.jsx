@@ -6,9 +6,11 @@ export default function App() {
     const email = formData.get('email');
     const password = formData.get('password');
     const description = formData.get('description');
-    console.log(email);
-    console.log(password);
-    console.log(description);
+    const employmentStatus = formData.get('employmentStatus');
+    const dietaryRestrictions = formData.getAll('dietaryRestrictions');
+    const favcolor = formData.get('favcolor');
+    console.log(favcolor);
+    
   }
 
   return (
@@ -38,6 +40,34 @@ export default function App() {
             Full-time
           </label>
         </fieldset>
+
+        <fieldset className='dr'>
+          <legend>Dietary Restriction</legend>
+          <label>
+            <input type='checkbox' name='dietaryRestrictions' value='vegetarian' />
+            veggie
+          </label>
+          <label>
+            <input type='checkbox' name='dietaryRestrictions' value='non-veg' />
+            Non-veg
+          </label>
+          <label>
+          <input type='checkbox' name='dietaryRestrictions' value='Both' />
+          Both
+          </label>
+        </fieldset>
+        <br/>
+        <label className='fc'>What is your favourite color?</label>
+        <br />
+        <select id='favcolor'>
+        <option value='red'>Red</option>
+        <option value='blue'>Blue</option>
+        <option value='green'>Green</option>
+        <option value='yellow'>Yellow</option>
+        <option value='orange'>Orange</option>
+        </select>
+        <br />
+
         <button type="submit">Submit</button>
       </form>
     </section>
